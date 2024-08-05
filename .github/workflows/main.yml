@@ -23,6 +23,12 @@ jobs:
 
       - name: Build Vue app
         run: npm run build
+      
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: ./dist
 
   deploy:
     needs: build
@@ -36,7 +42,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: dist
-          path: ./
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
