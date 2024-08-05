@@ -26,7 +26,7 @@ jobs:
 
       - name: Deploy Vue app to GitHub Pages
 
-deploy:
+  deploy:
     needs: build
     runs-on: ubuntu-latest
 
