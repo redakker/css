@@ -15,11 +15,13 @@
 
 <style scoped>
 .navigatorBoard {
+  position: absolute;
   display: inline-block;
-  width: 400px;
+  min-width: 400px;
   height: 90vh;
-  margin-top: 5vh;
-  margin-left: calc(50vw - 200px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   backdrop-filter: blur(5px);
   border: 2px solid #585858;
   border-radius: 15px;
@@ -27,6 +29,7 @@
 }
 
 .container {
+  position: relative;
   display: inline-block;
   width: 100%;
   height: 100%;
