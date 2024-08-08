@@ -17,7 +17,8 @@
 .navigatorBoard {
   position: absolute;
   display: inline-block;
-  min-width: 400px;
+  width: 50%;
+  max-width: 400px;
   height: 90vh;
   top: 50%;
   left: 50%;
