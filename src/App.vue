@@ -5,7 +5,7 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons'
 
 <template>
   <div class="home">
-    <router-link to="/css"><FontAwesomeIcon :icon="faHouse" /></router-link>
+    <router-link to="/css" class="homeicon"><FontAwesomeIcon :icon="faHouse" /></router-link>
   </div>
   <div class="bg">
     <router-view></router-view>
@@ -29,9 +29,11 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons'
   top: 10px;
   left: 10px;
   animation: bounce2 4s ease infinite;
-  z-index: 999;;
+  z-index: 999;
+}
 
-
+.homeicon {
+  border: none;
 }
 
 @keyframes bounce2 {

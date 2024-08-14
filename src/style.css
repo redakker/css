@@ -10,7 +10,12 @@ html, body {
 }
 
 a {
-  text-decoration: dashed underline;
   color: inherit;
+  border: 2px solid #ffffff2c;
+  text-decoration: none;;
+  border-width: 0 0 2px 0;
+}
 
+.hand {
+  cursor: pointer;
 }

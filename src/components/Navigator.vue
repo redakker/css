@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faKey } from '@fortawesome/free-solid-svg-icons'
+import { faKey, faScroll } from '@fortawesome/free-solid-svg-icons'
+
 
 const time = new Date().getFullYear();
 
@@ -24,7 +25,7 @@ const time = new Date().getFullYear();
             </div>
           </router-link>
           <div class="icon">
-            <FontAwesomeIcon :icon="faKey" />
+            <FontAwesomeIcon :icon="faScroll" />
             <p>infinite scroll</p>
           </div>
           <div class="icon">
