@@ -67,7 +67,7 @@ function showPassword() {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 50%;
+    max-width: 90%;
     max-height: 90%;
     position: absolute;
     top: 50vh;
