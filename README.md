@@ -5,6 +5,9 @@ Each CSS solution is organized into individual components, with each component e
 
 You are welcome to explore and use any solutions that you find useful!
 
+Every commit triggers a Github action which deploys the latest code to a Github page https://redakker.github.io/css/
+
+
 <!--
 # Todo
 
