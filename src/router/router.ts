@@ -1,7 +1,8 @@
-// src/router.ts
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Navigator from '../components/Navigator.vue';
 import Login from '../components/Login.vue';
+import InfiniteScroll from '../components/InfiniteScroll.vue';
+import BrandLogos from '../components/BrandLogos.vue';
 
 // Define routes
 const routes: Array<RouteRecordRaw> = [
@@ -15,6 +16,16 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Login',
     component: Login,
   },
+  {
+    path: '/css/infinite-scroll',
+    name: 'InfiniteScroll',
+    component: InfiniteScroll,
+  },
+  {
+    path: '/css/brand-logos',
+    name: 'BrandLogos',
+    component: BrandLogos,
+  }
 ];
 
 // Create the router instance

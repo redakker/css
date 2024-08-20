@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faKey, faScroll } from '@fortawesome/free-solid-svg-icons'
+import { faCircle, faKey, faScroll } from '@fortawesome/free-solid-svg-icons'
 
 
 const time = new Date().getFullYear();
@@ -13,25 +13,33 @@ const time = new Date().getFullYear();
       <div class="container">
         <div class="content">
           <h1>Welcome</h1>
-          <p>This page shows interesting CSS solution on component by component.</p>
+          <p>This page shows interesting CSS solutions on component by component.</p>
           <p>Each component will be linked to its own source code in <a href="https://github.com/redakker/css" target="_blank">Github</a> page</p>
           <p>This application is written in VueJs. It has some Javascript logic as well, but all the design is done by CSS only. Javascript is used for display data, and mocking background operation (for example in case of login page). Be aware this application has no backend it is not a purpose of that. </p>
 
         <div class="icons">
+
           <router-link to="/css/login">
             <div class="icon">
               <FontAwesomeIcon :icon="faKey" />
               <p>login</p>
             </div>
           </router-link>
-          <div class="icon">
-            <FontAwesomeIcon :icon="faScroll" />
-            <p>infinite scroll</p>
-          </div>
-          <div class="icon">
-            <FontAwesomeIcon :icon="faKey" />
-            <p>coming...</p>
-          </div>
+
+          <router-link to="/css/infinite-scroll">
+            <div class="icon">
+              <FontAwesomeIcon :icon="faScroll" />
+              <p>infinite scroll</p>
+            </div>
+          </router-link>
+
+          <router-link to="/css/brand-logos">
+            <div class="icon">
+              <FontAwesomeIcon :icon="faCircle" />
+              <p>Brand logos</p>
+            </div>
+          </router-link>
+
           <div class="icon">
             <FontAwesomeIcon :icon="faKey" />
             <p>coming...</p>
@@ -63,7 +71,7 @@ const time = new Date().getFullYear();
   color: white;
   position: absolute;
   width: 50%;
-  max-width: 400px;
+  max-width: 600px;
   height: 90vh;
   top: 50%;
   left: 50%;

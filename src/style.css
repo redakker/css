@@ -19,3 +19,7 @@ a {
 .hand {
   cursor: pointer;
 }
+
+.clear {
+  clear: both;
+}
